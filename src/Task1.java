@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -11,6 +12,7 @@ public class Task1 {
                 array[i][j] = random.nextInt(100);
             }
         }
+        System.out.println(Arrays.deepToString(array));
 
         // 1.2 Добавить к каждому значению число, которое пользователь будет вводить с консоли.
         Scanner scanner = new Scanner(System.in);
@@ -21,6 +23,7 @@ public class Task1 {
                 array[i][j] += number;
             }
         }
+        System.out.println(Arrays.deepToString(array));
 
         // 1.3 Найти сумму всех получившихся элементов и вывести в консоль
         int sum = 0;
